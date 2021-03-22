@@ -111,7 +111,7 @@ const SignatureView = forwardRef(({
         javaScriptEnabled={true}
         onError={renderError}
         onLoadEnd={() => setLoading(false)}
-        style={{borderRadius: 10}} // Chetan - Added 
+        style={{borderTopRightRadius: 10, borderBottomRightRadius: 10}} // Chetan - Added 
       />
       {loading && <View style={styles.loadingOverlayContainer}>
         <ActivityIndicator />
