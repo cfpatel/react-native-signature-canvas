@@ -10,7 +10,7 @@ import { WebView } from "react-native-webview";
 const styles = StyleSheet.create({
   webBg: {
     width: "100%",
-    backgroundColor: "transparent",
+    backgroundColor: "transparent", //Chetan - Changed default value from FFF to transparent
     flex: 1
   },
   loadingOverlayContainer: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" },
@@ -111,7 +111,7 @@ const SignatureView = forwardRef(({
         javaScriptEnabled={true}
         onError={renderError}
         onLoadEnd={() => setLoading(false)}
-        style={{borderRadius: 10}} // Added 
+        style={{borderRadius: 10}} // Chetan - Added 
       />
       {loading && <View style={styles.loadingOverlayContainer}>
         <ActivityIndicator />
