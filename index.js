@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
   webBg: {
     width: "100%",
     backgroundColor: "transparent", //Chetan - Changed default value from FFF to transparent
-    flex: 1
+    flex: 1,
+    borderRadius: 10 // Chetan - Added
   },
   loadingOverlayContainer: { position: "absolute", top: 0, bottom: 0, left: 0, right: 0, alignItems: "center", justifyContent: "center" },
 });
